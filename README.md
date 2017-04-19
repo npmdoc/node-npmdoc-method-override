@@ -1,9 +1,14 @@
-# api documentation for  [method-override (v2.3.8)](https://github.com/expressjs/method-override#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-method-override.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-method-override) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-method-override.svg)](https://travis-ci.org/npmdoc/node-npmdoc-method-override)
+# npmdoc-method-override
+
+#### api documentation for  [method-override (v2.3.8)](https://github.com/expressjs/method-override#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-method-override.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-method-override) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-method-override.svg)](https://travis-ci.org/npmdoc/node-npmdoc-method-override)
+
 #### Override HTTP verbs
 
-[![NPM](https://nodei.co/npm/method-override.png?downloads=true)](https://www.npmjs.com/package/method-override)
+[![NPM](https://nodei.co/npm/method-override.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/method-override)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-method-override/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-method-override%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-method-override/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-method-override/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-method-override/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-method-override/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-method-override/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-method-override/build/screenCapture.npmPackageListing.svg)
 
@@ -21,12 +26,10 @@
     },
     "contributors": [
         {
-            "name": "Douglas Christopher Wilson",
-            "email": "doug@somethingdoug.com"
+            "name": "Douglas Christopher Wilson"
         },
         {
             "name": "Jonathan Ong",
-            "email": "me@jongleberry.com",
             "url": "http://jongleberry.com"
         }
     ],
@@ -65,33 +68,26 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "defunctzombie",
-            "email": "shtylman@gmail.com"
+            "name": "defunctzombie"
         },
         {
-            "name": "dougwilson",
-            "email": "doug@somethingdoug.com"
+            "name": "dougwilson"
         },
         {
-            "name": "fishrock123",
-            "email": "fishrock123@rocketmail.com"
+            "name": "fishrock123"
         },
         {
-            "name": "jongleberry",
-            "email": "jonathanrichardong@gmail.com"
+            "name": "jongleberry"
         },
         {
-            "name": "mscdex",
-            "email": "mscdex@mscdex.net"
+            "name": "mscdex"
         },
         {
-            "name": "tjholowaychuk",
-            "email": "tj@vision-media.ca"
+            "name": "tjholowaychuk"
         }
     ],
     "name": "method-override",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/expressjs/method-override.git"
@@ -105,16 +101,6 @@
     "version": "2.3.8"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module method-override](#apidoc.module.method-override)
-
-
-
-# <a name="apidoc.module.method-override"></a>[module method-override](#apidoc.module.method-override)
 
 
 

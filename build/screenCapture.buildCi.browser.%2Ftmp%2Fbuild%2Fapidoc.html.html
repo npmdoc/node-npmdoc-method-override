@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/expressjs/method-override#readme"
-
-    >method-override (v2.3.8)</a>
+    <a href="https://github.com/expressjs/method-override#readme">method-override (v2.3.8)</a>
 </h1>
 <h4>Override HTTP verbs</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.method-override">module method-override</a><ol>
 
@@ -89,13 +82,13 @@
   var opts = options || {}
 
   // get the getter fn
-  var get = typeof getter === &#x27;function&#x27;
+  var get = typeof getter === 'function'
     ? getter
-    : createGetter(getter || &#x27;X-HTTP-Method-Override&#x27;)
+    : createGetter(getter || 'X-HTTP-Method-Override')
 
   // get allowed request methods to examine
   var methods = opts.methods === undefined
-    ? [&#x27;POST&#x27;]
+    ? ['POST']
     : opts.methods
 
   return function methodOverride (req, res, next) {
@@ -105,7 +98,7 @@
     req.originalMethod = req.originalMethod || req.method
 
     // validate request is an allowed method
-    if (methods &#x26;&#x26; methods.indexOf(req.originalMethod) === -1) {
+    if (methods &amp;&amp; methods.indexOf(req.originalMethod) === -1) {
       return next()
     }
 
@@ -115,9 +108,9 @@
       : val
 
     // replace
-    if (method !== undefined &#x26;&#x26; supports(method)) {
+    if (method !== undefined &amp;&amp; supports(method)) {
       req.method = method.toUpperCase()
-      debug(&#x27;override %s as %s&#x27;, req.originalMethod, req.method)
+      debug('override %s as %s', req.originalMethod, req.method)
     }
 
     next()
@@ -135,3 +128,4 @@
     ]
 </div>
 </div>
+</body></html>

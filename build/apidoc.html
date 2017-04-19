@@ -61,12 +61,71 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.method-override">module method-override</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.method-override.method-override">
+            function <span class="apidocSignatureSpan"></span>method-override
+            <span class="apidocSignatureSpan">(getter, options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.method-override" id="apidoc.module.method-override">module method-override</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.method-override.method-override" id="apidoc.element.method-override.method-override">
+        function <span class="apidocSignatureSpan"></span>method-override
+        <span class="apidocSignatureSpan">(getter, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function methodOverride(getter, options) {
+  var opts = options || {}
+
+  // get the getter fn
+  var get = typeof getter === &#x27;function&#x27;
+    ? getter
+    : createGetter(getter || &#x27;X-HTTP-Method-Override&#x27;)
+
+  // get allowed request methods to examine
+  var methods = opts.methods === undefined
+    ? [&#x27;POST&#x27;]
+    : opts.methods
+
+  return function methodOverride (req, res, next) {
+    var method
+    var val
+
+    req.originalMethod = req.originalMethod || req.method
+
+    // validate request is an allowed method
+    if (methods &#x26;&#x26; methods.indexOf(req.originalMethod) === -1) {
+      return next()
+    }
+
+    val = get(req, res)
+    method = Array.isArray(val)
+      ? val[0]
+      : val
+
+    // replace
+    if (method !== undefined &#x26;&#x26; supports(method)) {
+      req.method = method.toUpperCase()
+      debug(&#x27;override %s as %s&#x27;, req.originalMethod, req.method)
+    }
+
+    next()
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
